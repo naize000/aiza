@@ -2,62 +2,89 @@
 @import 'vars'; 
 
 
-
 body{
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
-}
 
-
-
-.navbar{
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.nav-bg:hover{
-    background-color: $hover;
-    color: $text;
-    border-radius: 60px;
-    opacity: 0.6;
-}
-
-#content{
-    margin-top: 30px;
-    padding-bottom: 20px;
-}
+   
+    .img{
+        display: flex;
+        justify-content: center;
+    }
+    .mw-500{
+        max-width: 500px;
+    }
     
-.mw-500{
-    max-width: 500px;
-}
-
-.title{
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: underline dotted $title;
-}
-
-.text{
-    color: $text;
-}
-
-.content-text-items{
-    margin-top: 6.25rem;
-}
-
-#education{
-    padding-top: 50px;
-    .educationText-bg{
-        border-radius: 50 px;
-        padding: 20px;
+    .title{
+        padding-left: 5px;
+        padding-right: 5px;
+        text-decoration: underline dotted $title;
     }
-    .images-education{
-        padding-bottom: 10px;
-        
+    
+    .text{
+        color: $text;
     }
-    .img-items{
-        margin-top: 20px;
-        border-radius: 50px;
-        box-shadow: 0 0 50px 10px $hover;
+
+    #header{
+        .navbar{
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .nav-bg:hover{
+            background-color: $hover;
+            color: $text;
+            border-radius: 60px;
+            opacity: 0.6;
+        }
     }
+    #content{
+        margin-top: 30px;
+        padding-bottom: 20px;
+
+        .content-text-items{
+            margin-top: 6.25rem;
+        }
+
+    }
+
+
+
+    #education{
+        padding-top: 50px;
+        .educationText-bg{
+            border-radius: 50 px;
+            padding: 20px;
+        }
+        .images-education{
+            padding-bottom: 10px;
+
+        }
+        .img-items{
+            margin-top: 20px;
+            border-radius: 50px;
+            box-shadow: 0 0 50px 10px $hover;
+        }
+        .slick-dots li button::before{
+            background-color: $title;
+            height: 2px;
+        }
+
+        .slick-prev:before, .slick-next:before {
+            color: $hover;
+            max-height: 300px;
+        }
+    }
+
+    #price{
+        margin-top: 10px;
+
+        .btn-primary{
+            background-color: $title;
+        }
+        .btn-primary:hover{
+            background-color: $hover;
+        }
+    }
+
 }

@@ -4,3 +4,8 @@ $text: #020202;
 $hover:#FC0061;
 $title:#5E0035;
 
+// carusel
+$carousel-dark-indicator-active-bg:  $text;
+$carousel-dark-caption-color:        $text;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);
+
