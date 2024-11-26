@@ -12,7 +12,7 @@ body {
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
 }
-body ma .img {
+body .img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
